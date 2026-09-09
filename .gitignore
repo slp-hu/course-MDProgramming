@@ -1,0 +1,13 @@
+# 解答・隠しテストを含むもの（絶対に公開しない）
+*_master.ipynb
+dist/
+autograder/
+autograder*.zip
+*-autograder_*.zip
+
+# 学生の提出物・成績
+submissions/
+*.csv
+
+.ipynb_checkpoints/
+.DS_Store
