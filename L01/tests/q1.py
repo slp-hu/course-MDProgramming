@@ -1,12 +1,11 @@
-OK_FORMAT = True
+from otter.test_files import test_case
 
-test = {   'name': 'q1',
-    'points': 10,
-    'suites': [   {   'cases': [   {   'code': ">>> def test_q1(mean_of, assert_equal):\n...     assert_equal('mean_of([1, 2, 3])', mean_of([1, 2, 3]), 2)\n>>> test_q1(mean_of, assert_equal)\n",
-                                       'hidden': False,
-                                       'locked': False,
-                                       'points': 4}],
-                      'scored': True,
-                      'setup': '',
-                      'teardown': '',
-                      'type': 'doctest'}]}
+OK_FORMAT = False
+
+name = "q1"
+points = 10
+
+@test_case(points=4, hidden=False)
+def test_q1(mean_of, assert_equal):
+    assert_equal('mean_of([1, 2, 3])', mean_of([1, 2, 3]), 2)
+
